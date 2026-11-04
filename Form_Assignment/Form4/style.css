@@ -1,0 +1,253 @@
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #777777;
+}
+
+/* Main registration card */
+.registration-card {
+    width: 440px;
+    min-height: 595px;
+    padding: 14px 39px 30px;
+    background: #eeeeee;
+    border: 1px solid #d9d9d9;
+    border-radius: 11px;
+    box-shadow:
+        0 0 5px rgba(0, 0, 0, 0.18),
+        inset 0 0 3px rgba(0, 0, 0, 0.06);
+}
+
+/* Heading */
+.registration-card h1 {
+    text-align: center;
+    font-size: 38px;
+    font-weight: 400;
+    color: #858585;
+    margin-bottom: 13px;
+}
+
+/* Divider lines */
+.divider {
+    height: 1px;
+    background: #dddddd;
+    width: 100%;
+}
+
+/* Personal / Company options */
+.account-type {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    height: 79px;
+}
+
+.account-type label,
+.gender-options label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 20px;
+    color: #777777;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+/* Hide native radio inputs */
+.account-type input,
+.gender-options input {
+    position: absolute;
+    opacity: 0;
+    width: 1px;
+    height: 1px;
+}
+
+/* Custom blue circular radio buttons */
+.custom-radio {
+    width: 27px;
+    height: 27px;
+    flex-shrink: 0;
+    border-radius: 50%;
+    background: #3f5fb5;
+    border: 1px solid #d5d5d5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 15px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12);
+}
+
+/* Show check only on selected options */
+.account-type input:not(:checked) + .custom-radio,
+.gender-options input:not(:checked) + .custom-radio {
+    background: #3f5fb5;
+}
+
+.account-type input:not(:checked) + .custom-radio i,
+.gender-options input:not(:checked) + .custom-radio i {
+    display: none;
+}
+
+.account-type input:focus-visible + .custom-radio,
+.gender-options input:focus-visible + .custom-radio {
+    outline: 2px solid #222222;
+    outline-offset: 3px;
+}
+
+/* Form fields */
+form {
+    padding-top: 29px;
+}
+
+.input-group {
+    display: flex;
+    align-items: stretch;
+    width: 100%;
+    height: 50px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    overflow: hidden;
+    background: #ffffff;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.17);
+}
+
+.input-icon {
+    width: 56px;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #3f5fb5;
+    color: white;
+    font-size: 20px;
+}
+
+.input-group input {
+    width: 100%;
+    min-width: 0;
+    border: 1px solid #dddddd;
+    border-left: none;
+    border-radius: 0 5px 5px 0;
+    outline: none;
+    padding: 0 14px;
+    font-size: 20px;
+    font-family: inherit;
+    color: #555555;
+    background: #ffffff;
+}
+
+.input-group input::placeholder {
+    color: #999999;
+    opacity: 1;
+}
+
+.input-group:focus-within {
+    box-shadow: 0 0 0 2px rgba(63, 95, 181, 0.25);
+}
+
+/* Gender selection */
+.gender-options {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 32px;
+}
+
+/* Bottom text and button */
+.form-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    margin-top: 51px;
+}
+
+.form-footer p {
+    font-size: 16px;
+    line-height: 18px;
+    color: #777777;
+    flex: 1;
+}
+
+.form-footer a {
+    color: #526bc1;
+    text-decoration: underline;
+}
+
+.form-footer button {
+    width: 122px;
+    height: 46px;
+    flex-shrink: 0;
+    border: none;
+    border-radius: 6px;
+    background: #3f5fb5;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.18);
+}
+
+.form-footer button:hover {
+    background: #334f9e;
+}
+
+.form-footer button:active {
+    transform: translateY(1px);
+}
+
+/* Responsive layout */
+@media (max-width: 480px) {
+    body {
+        padding: 12px;
+    }
+
+    .registration-card {
+        width: 100%;
+        max-width: 440px;
+        padding: 18px 22px 28px;
+    }
+
+    .registration-card h1 {
+        font-size: 32px;
+    }
+
+    .account-type,
+    .gender-options {
+        gap: 18px;
+    }
+
+    .account-type label,
+    .gender-options label {
+        font-size: 17px;
+        gap: 7px;
+    }
+
+    .form-footer {
+        gap: 8px;
+    }
+
+    .form-footer p {
+        font-size: 13px;
+        line-height: 17px;
+    }
+
+    .form-footer button {
+        width: 105px;
+        font-size: 16px;
+    }
+}

@@ -1,0 +1,157 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Championship Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="registration-container">
+
+        <h1>School Championship Registration Form</h1>
+
+        <form action="#" method="post">
+
+            <!-- School name -->
+            <div class="form-group">
+                <label for="school-name">
+                    School name:<span class="required">*</span>
+                </label>
+                <input
+                    type="text"
+                    id="school-name"
+                    name="schoolName"
+                    required
+                >
+            </div>
+
+            <!-- Schooler name -->
+            <div class="form-group">
+                <label>
+                    Schooler name:<span class="required">*</span>
+                </label>
+
+                <div class="name-fields">
+                    <input
+                        type="text"
+                        name="studentFirstName"
+                        placeholder="First"
+                        aria-label="Student first name"
+                        required
+                    >
+
+                    <input
+                        type="text"
+                        name="studentLastName"
+                        placeholder="Last"
+                        aria-label="Student last name"
+                        required
+                    >
+                </div>
+            </div>
+
+            <!-- Parent name -->
+            <div class="form-group">
+                <label>
+                    Parent name:<span class="required">*</span>
+                </label>
+
+                <div class="name-fields">
+                    <input
+                        type="text"
+                        name="parentFirstName"
+                        placeholder="First"
+                        aria-label="Parent first name"
+                        required
+                    >
+
+                    <input
+                        type="text"
+                        name="parentLastName"
+                        placeholder="Last"
+                        aria-label="Parent last name"
+                        required
+                    >
+                </div>
+            </div>
+
+            <!-- Parent phone -->
+            <div class="form-group">
+                <label for="parent-phone">
+                    Parent phone:<span class="required">*</span>
+                </label>
+
+                <input
+                    type="tel"
+                    id="parent-phone"
+                    name="parentPhone"
+                    placeholder="### ### ####"
+                    required
+                >
+            </div>
+
+            <!-- Parent email -->
+            <div class="form-group">
+                <label for="parent-email">
+                    Parent email:<span class="required">*</span>
+                </label>
+
+                <input
+                    type="email"
+                    id="parent-email"
+                    name="parentEmail"
+                    required
+                >
+            </div>
+
+            <!-- Preferred sport -->
+            <div class="form-group">
+                <label for="preferred-sport">
+                    Preferred sport:<span class="required">*</span>
+                </label>
+
+                <input
+                    type="text"
+                    id="preferred-sport"
+                    name="preferredSport"
+                    required
+                >
+            </div>
+
+            <!-- Verification -->
+            <div class="verification">
+                <label class="verification-title">
+                    Verification<span class="required">*</span>
+                </label>
+
+                <label class="captcha-box">
+                    <input type="checkbox" name="robotCheck" required>
+
+                    <span class="captcha-text">
+                        I'm not a robot
+                    </span>
+
+                    <span class="captcha-brand">
+                        <span class="captcha-logo">🔄</span>
+                        <span>reCAPTCHA</span>
+                        <small>Privacy - Terms</small>
+                    </span>
+                </label>
+            </div>
+
+            <!-- Submit -->
+            <div class="submit-container">
+                <button type="submit">
+                    <span class="submit-icon">➤</span>
+                    Submit
+                </button>
+            </div>
+
+        </form>
+    </div>
+
+</body>
+</html>

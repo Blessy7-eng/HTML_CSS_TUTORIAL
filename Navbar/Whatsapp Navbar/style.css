@@ -1,0 +1,193 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #18191b;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #f1f1f1;
+}
+
+.navbar {
+  width: 100%;
+  height: 78px;
+  padding: 0 16px;
+  background: #111214;
+  border-bottom: 1px solid #303135;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.project-info {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex: 1;
+  min-width: 0;
+}
+
+.project-logo {
+  width: 46px;
+  height: 46px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background: #29252d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.project-logo img {
+  width: 26px;
+  height: 26px;
+  object-fit: contain;
+  filter: brightness(0) saturate(100%) invert(8%);
+}
+
+.project-details {
+  min-width: 0;
+  overflow: hidden;
+}
+
+.project-details h1 {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.5;
+  color: #f5f5f5;
+  white-space: nowrap;
+}
+
+.project-details p {
+  margin-top: 1px;
+  font-size: 12px;
+  line-height: 1.5;
+  color: #9b9ca2;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.navbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-shrink: 0;
+}
+
+.add-list,
+.icon-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+}
+
+.add-list {
+  height: 38px;
+  padding: 0 14px;
+  gap: 7px;
+  border: 1px solid #45464b;
+  border-radius: 22px;
+  background: #f1f1f1;
+  color: #111214;
+  font-size: 13px;
+  white-space: nowrap;
+}
+
+.add-list img {
+  width: 23px;
+  height: 23px;
+  object-fit: contain;
+  filter: brightness(0);
+}
+
+.chevron {
+  font-size: 12px;
+  color: #6c778b;
+}
+
+.icon-button {
+  width: 28px;
+  height: 32px;
+  gap: 3px;
+  background: transparent;
+  border-radius: 5px;
+}
+
+.icon-button img {
+  width: 17px;
+  height: 17px;
+  object-fit: contain;
+  filter: brightness(0) invert(1);
+}
+
+.add-list:hover {
+  background: #dedede;
+}
+
+.icon-button:hover {
+  background: #292a2e;
+}
+
+@media (max-width: 700px) {
+  .navbar {
+    height: 68px;
+    padding: 0 10px;
+    gap: 8px;
+  }
+
+  .project-info {
+    gap: 9px;
+  }
+
+  .project-logo {
+    width: 38px;
+    height: 38px;
+  }
+
+  .project-logo img {
+    width: 22px;
+    height: 22px;
+  }
+
+  .project-details h1 {
+    font-size: 13px;
+  }
+
+  .project-details p {
+    font-size: 10px;
+  }
+
+  .navbar-actions {
+    gap: 5px;
+  }
+
+  .add-list {
+    height: 32px;
+    padding: 0 9px;
+    gap: 5px;
+    font-size: 11px;
+  }
+
+  .add-list img {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+@media (max-width: 450px) {
+  .project-details p {
+    display: none;
+  }
+
+  .add-list span:nth-child(2) {
+    display: none;
+  }
+}

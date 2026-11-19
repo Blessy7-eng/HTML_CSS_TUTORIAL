@@ -1,0 +1,89 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.form-container {
+    background-color: white;
+    padding: 30px 40px;
+    border: 1px solid #ccc;
+    width: 400px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05);
+}
+
+h2 {
+    margin-top: 0;
+    margin-bottom: 5px;
+    font-size: 28px;
+}
+
+.subtitle {
+    color: #333;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+.divider {
+    border: 0;
+    height: 1px;
+    background: #ccc;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #111;
+}
+
+input[type=text], input[type=email], input[type=password] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+input[type=text]::placeholder, 
+input[type=email]::placeholder, 
+input[type=password]::placeholder {
+    color: #888;
+}
+
+input:focus {
+    outline: none;
+    border-color: #666;
+}
+
+.registerbtn {
+    background-color: #f1f1f1;
+    color: black;
+    padding: 12px 20px;
+    margin: 8px 0 20px 0;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+}
+
+.registerbtn:hover {
+    background-color: #ddd;
+}
+
+.signin {
+    text-align: center;
+    font-size: 15px;
+}
+
+.signin a {
+    color: navy;
+    text-decoration: underline;
+}

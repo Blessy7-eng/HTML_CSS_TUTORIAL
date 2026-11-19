@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Icon: switch-account-outline-sharp
+  Set: Material Symbols
+  Author: Google (https://github.com/google/material-design-icons)
+  License: Apache 2.0 (https://github.com/google/material-design-icons/blob/master/LICENSE)
+  Source: https://iconify.design
+-->
+<svg xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     viewBox="0 0 24 24"
+     width="24"
+     height="24">
+  <title>Vinyl Record Player Icon</title>
+  <metadata>
+    <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+             xmlns:dc="http://purl.org/dc/elements/1.1/"
+             xmlns:cc="http://creativecommons.org/ns#">
+      <cc:Work rdf:about="">
+        <dc:title>Vinyl Record Player Icon</dc:title>
+        <dc:description>Minimalist icon of a vinyl record player, ideal for music-related designs, retro themes, or audio equipment branding. Perfect for websites, apps, and promotional materials.</dc:description>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>Google</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:source>https://github.com/google/material-design-icons</dc:source>
+        <dc:rights>
+          <cc:Agent>
+            <dc:title>Google</dc:title>
+          </cc:Agent>
+        </dc:rights>
+        <cc:license rdf:resource="https://github.com/google/material-design-icons/blob/master/LICENSE"/>
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+        <dc:subject>
+          <rdf:Bag>
+            <rdf:li>vinyl-record</rdf:li>
+            <rdf:li>record-player</rdf:li>
+            <rdf:li>music-icon</rdf:li>
+            <rdf:li>audio-equipment</rdf:li>
+            <rdf:li>retro-music</rdf:li>
+            <rdf:li>turntable</rdf:li>
+            <rdf:li>music-player</rdf:li>
+            <rdf:li>sound-system</rdf:li>
+            <rdf:li>vintage-audio</rdf:li>
+            <rdf:li>music-technology</rdf:li>
+            <rdf:li>DJ-equipment</rdf:li>
+            <rdf:li>music-app</rdf:li>
+            <rdf:li>sound-icon</rdf:li>
+            <rdf:li>audio-icon</rdf:li>
+            <rdf:li>music-design</rdf:li>
+          </rdf:Bag>
+        </dc:subject>
+      </cc:Work>
+      <cc:License rdf:about="https://github.com/google/material-design-icons/blob/master/LICENSE">
+        <dc:title>Apache 2.0 (Apache-2.0)</dc:title>
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+  <path fill="currentColor" d="M14 11q1.25 0 2.125-.875T17 8t-.875-2.125T14 5t-2.125.875T11 8t.875 2.125T14 11m-6 4.75q1.125-1.325 2.7-2.037T14 13t3.3.713T20 15.75V4H8zM6 18V2h16v16zm-4 4V6h2v14h14v2zM14 9q-.425 0-.712-.288T13 8t.288-.712T14 7t.713.288T15 8t-.288.713T14 9m-3.3 7h6.6q-.725-.5-1.575-.75T14 15t-1.725.25T10.7 16M14 9.875"/>
+</svg>
